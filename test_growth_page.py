@@ -43,7 +43,7 @@ class TestUserWhatIsIncluded():
         product_page.link_learn_more()
         product_page.link_news_learn_more()
 
-    def test_download_block_wrapper(self, browser):
+    def test_growth_download_block_wrapper(self, browser):
 
         product_page = ProductPromo(browser, 'https://www.combin.com/product/instagram-growth/')
         product_page.open()
@@ -57,8 +57,8 @@ class TestUserWhatIsIncluded():
         product_page.close_promo_block()
         product_page.email_for_start()
         product_page.button_try_free()
-        #product_page.assept_alert()
+        product_page.assept_alert()
 
 
 
-        print(" Autotest GROWTH PAGE PASS")
+        print(" Autotest Growth Page PASS")

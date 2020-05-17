@@ -41,8 +41,8 @@ class DownloadBlockLocators:
     BUTTONTRYFREE = (By.CSS_SELECTOR, "span.link-with-arrow.link-with-arrow--primary-color.link-with-arrow--down-small:nth-child(2)")
     BUTTONTRYFORFREEPROMO = (By.CSS_SELECTOR, "span.link-with-arrow.link-with-arrow--primary-color.link-with-arrow--down-small:nth-child(1)")
     DOWNLOADBLOCKWRAPPER = (By.XPATH, '//*[@id="reminder-modal-growth"]/div')
-    EMAILFORSTARTPROMO = (By.XPATH, '//*[@id="reminder-modal-growth"]/div/div[2]/form/div/input[1]')
-    BUTTONTRYFREEPROMO = (By.XPATH, '//*[@id="reminder-modal-growth"]/div/div[2]/form/div/button/span[2]')
+    EMAILFORSTARTPROMOGROWTH = (By.XPATH, '//*[@id="reminder-modal-growth"]/div/div[2]/form/div/input[1]')
+    BUTTONTRYFREEPROMOGROWTH = (By.XPATH, '//*[@id="reminder-modal-growth"]/div/div[2]/form/div/button/span[2]')
     CLOSEPROMOBLOCK = (By.XPATH, '//*[@id="reminder-modal-growth"]/a')
 
 class OpenLinkLocators:

@@ -150,11 +150,11 @@ class ProductPromo(BasePage):
         download_block = self.browser.find_element(*DownloadBlockLocators.DOWNLOADBLOCKWRAPPER)
 
     def email_for_start_promo(self):
-        start_promo = self.browser.find_element(*DownloadBlockLocators.EMAILFORSTARTPROMO)
+        start_promo = self.browser.find_element(*DownloadBlockLocators.EMAILFORSTARTPROMOGROWTH)
         start_promo.send_keys("openmedia@mail.ru")
 
     def button_try_free_promo(self):
-        free_promo = self.browser.find_element(*DownloadBlockLocators.BUTTONTRYFREEPROMO)
+        free_promo = self.browser.find_element(*DownloadBlockLocators.BUTTONTRYFREEPROMOGROWTH)
         free_promo.click()
 
     def assept_alert(self):

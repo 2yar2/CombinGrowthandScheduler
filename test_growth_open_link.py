@@ -16,4 +16,4 @@ class TestOpenPageLinkWithGrowth():
         product_page.cookies_close()
         product_page.open_learn_more_growth_page()
 
-        print(" Autotest GROWTH OPEN LINK PASS")
+        print(" Autotest Growth Open Link PASS")
