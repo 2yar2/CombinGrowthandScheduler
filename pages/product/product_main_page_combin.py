@@ -291,3 +291,35 @@ class ProductCombinMainPageLink(BasePage):
         assert link == "https://www.instagram.com/mboroshirt/"
 
 # rounded-block try-now__item combin and scheduler
+    def last_download_block_growth_learn_more(self):
+        link = self.browser.find_element(*MainPageCombinLocators.LASTDOWNLOADBLOCKGROWTHLEARNMORE).get_attribute("href")
+        assert link == "https://www.combin.com/product/instagram-growth/"
+
+    def last_download_block_scheduler_learn_more(self):
+        link = self.browser.find_element(*MainPageCombinLocators.LASTDOWNLOADBLOCKSCHEDULERLEARNMORE).get_attribute("href")
+        assert link == "https://www.combin.com/product/free-instagram-scheduler/"
+
+    def last_download_block_growth_try_for_free(self):
+        button = self.browser.find_element(*MainPageCombinLocators.LASTDOWNLOADBLOCKGROWTHTRYFORFREE)
+        button.click()
+
+    def last_download_block_growth_input(self):
+        input = self.browser.find_element(*MainPageCombinLocators.LASTDOWNLOADBLOCKGROWTHINPUT)
+        input.send_keys("openmedia2020@mail.ru")
+
+    def last_download_block_growth_try_free(self):
+        button = self.browser.find_element(*MainPageCombinLocators.LASTDOWNLOADBLOCKGROWTHTRYFREE)
+        button.click()
+        time.sleep(2)
+
+    def last_download_block_scheduler_try_for_free(self):
+        button = self.browser.find_element(*MainPageCombinLocators.LASTDOWNLOADBLOCKSHEDULERTRYFORFREE)
+        button.click()
+
+    def last_download_block_scheduler_input(self):
+        input = self.browser.find_element(*MainPageCombinLocators.LASTDOWNLOADBLOCKSCHEDULERINPUT)
+        input.send_keys("openmedia2020@mail.ru")
+
+    def last_download_block_scheduler_try_free(self):
+        button = self.browser.find_element(*MainPageCombinLocators.LASTDOWNLOADBLOCKSHEDULERTRYFREE)
+        button.click()

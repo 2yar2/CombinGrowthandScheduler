@@ -116,4 +116,13 @@ class MainPageCombinLocators:
 
 
 # rounded-block try-now__item combin and scheduler
+    LASTDOWNLOADBLOCKGROWTHLEARNMORE = (By.XPATH, '/html/body/div[1]/section[5]/div/div[1]/div/div/a')
+    LASTDOWNLOADBLOCKSCHEDULERLEARNMORE = (By.XPATH, '/html/body/div[1]/section[5]/div/div[2]/div/div/a')
 
+    LASTDOWNLOADBLOCKGROWTHTRYFORFREE = (By.XPATH, '/html/body/div[1]/section[5]/div/div[1]/div/div/button/span')
+    LASTDOWNLOADBLOCKGROWTHINPUT = (By.XPATH, '//*[@id="reminder-modal-growth"]/div/div[2]/form/div/input[1]')
+    LASTDOWNLOADBLOCKGROWTHTRYFREE = (By.XPATH, '//*[@id="reminder-modal-growth"]/div/div[2]/form/div/button/span[2]')
+
+    LASTDOWNLOADBLOCKSHEDULERTRYFORFREE = (By.XPATH, '/html/body/div[1]/section[5]/div/div[2]/div/div/button/span')
+    LASTDOWNLOADBLOCKSCHEDULERINPUT = (By.XPATH, '//*[@id="reminder-modal-scheduler"]/div/div[2]/form/div/input[1]')
+    LASTDOWNLOADBLOCKSHEDULERTRYFREE = (By.XPATH, '//*[@id="reminder-modal-scheduler"]/div/div[2]/form/div/button')

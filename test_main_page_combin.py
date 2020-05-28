@@ -110,3 +110,19 @@ class TestCombinMainPage():
         product_page.feedback_instagram_id()
 
 # rounded-block try-now__item combin and scheduler
+    def test_check_last_download_block_growth_and_scheduler(self, browser):
+
+        product_page = ProductCombinMainPageLink(browser, 'https://www.combin.com/')
+        product_page.open()
+        product_page.cookies_close()
+
+        product_page.last_download_block_growth_learn_more()
+        product_page.last_download_block_scheduler_learn_more()
+
+        product_page.last_download_block_growth_try_for_free()
+        product_page.last_download_block_growth_input()
+        product_page.last_download_block_growth_try_free()
+
+        product_page.last_download_block_scheduler_try_for_free()
+        product_page.last_download_block_scheduler_input()
+        product_page.last_download_block_scheduler_try_free()
