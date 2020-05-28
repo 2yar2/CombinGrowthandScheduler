@@ -1,6 +1,6 @@
-from .locators_scheduler import SchedulerPageLocators
-from .locators_growth import DownloadBlockLocators
-from .base_page import BasePage
+from pages.locators.locators_scheduler import SchedulerPageLocators
+from pages.locators.locators_growth import DownloadBlockLocators
+from pages.base_page import BasePage
 import time
 
 
@@ -105,7 +105,7 @@ class ProductPromoScheduler(BasePage):
 
     def email_for_start_promo(self):
         start_promo = self.browser.find_element(*SchedulerPageLocators.EMAILFORSTARTPROMOSCHEDULER)
-        start_promo.send_keys("openmedia@mail.ru")
+        start_promo.send_keys("openmedia2020@mail.ru")
 
     def button_try_free_promo(self):
         free_promo = self.browser.find_element(*SchedulerPageLocators.BUTTONTRYFREEPROMOSCHEDULER)

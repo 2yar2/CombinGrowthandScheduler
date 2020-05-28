@@ -1,5 +1,5 @@
-from .locators_pricing import PricingLocators
-from .base_page import BasePage
+from pages.locators.locators_pricing import PricingLocators
+from pages.base_page import BasePage
 import time
 
 class ProductPagePricing(BasePage):
@@ -168,6 +168,8 @@ class ProductPagePricing(BasePage):
 
     def update_billing_link(self):
         self.browser.find_element(*PricingLocators.UPDATEBILLINGLINK)
+
+class ContactUs(BasePage):
 # мы в соц сетях
     def contact_us(self):
         self.browser.find_element(*PricingLocators.CONTACTUS)
@@ -205,6 +207,10 @@ class ProductPagePricing(BasePage):
 
     def dev_team_email(self):
         self.browser.find_element(*PricingLocators.DEVELOPMENTTEAMEMAIL)
+
+    def cookies_close(self):
+        close = self.browser.find_element(*PricingLocators.COOKIES_CLOSE)
+        close.click()
 
 class PricingScheduler(BasePage):
 

@@ -1,5 +1,5 @@
-from .pages.product_scheduler_page import ProductPageScheduler
-from .pages.product_scheduler_page import ProductPromoScheduler
+from pages.product.product_scheduler_page import ProductPageScheduler
+from pages.product.product_scheduler_page import ProductPromoScheduler
 
 class TestSchedulerPage():
 

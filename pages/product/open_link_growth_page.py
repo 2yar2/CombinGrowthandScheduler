@@ -1,7 +1,7 @@
 import time
-from .base_page import BasePage
-from .locators_growth import OpenLinkLocators
-from .locators_growth import MainPageLocators
+from pages.base_page import BasePage
+from pages.locators.locators_growth import OpenLinkLocators
+from pages.locators.locators_growth import MainPageLocators
 
 
 class OpenLinkWithGrowthPage(BasePage):
@@ -16,7 +16,7 @@ class OpenLinkWithGrowthPage(BasePage):
         watch_demo.click()
         time.sleep(1)
         href = self.browser.find_element(*OpenLinkLocators.WATCHADEMO).get_attribute("href")
-        print(href)
+        assert href == "https://youtu.be/LyMOcmJvH7Q"
 
 
     def open_learn_more_growth_page(self):

@@ -1,5 +1,6 @@
-from .pages.product_pricing_page import ProductPagePricing
-from .pages.product_pricing_page import PricingScheduler
+from pages.product.product_pricing_page import ProductPagePricing
+from pages.product.product_pricing_page import PricingScheduler
+from pages.product.product_pricing_page import ContactUs
 
 class TestPricingPage():
 
@@ -56,6 +57,11 @@ class TestPricingPage():
         product_page.update_billing()
         product_page.update_billing_answer()
         product_page.update_billing_link()
+
+    def test_contact_us(self, browser):
+        product_page = ContactUs(browser, 'https://www.combin.com/pricing/')
+        product_page.open()
+        product_page.cookies_close()
         product_page.contact_us()
         product_page.contact_us_text()
         product_page.combin_blog()

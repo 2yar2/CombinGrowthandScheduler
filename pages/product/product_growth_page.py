@@ -1,8 +1,6 @@
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from .locators_growth import MainPageLocators
-from .locators_growth import DownloadBlockLocators
-from .base_page import BasePage
+from pages.locators.locators_growth import MainPageLocators
+from pages.locators.locators_growth import DownloadBlockLocators
+from pages.base_page import BasePage
 import time
 
 
@@ -151,7 +149,7 @@ class ProductPromo(BasePage):
 
     def email_for_start_promo(self):
         start_promo = self.browser.find_element(*DownloadBlockLocators.EMAILFORSTARTPROMOGROWTH)
-        start_promo.send_keys("openmedia@mail.ru")
+        start_promo.send_keys("openmedia2020@mail.ru")
 
     def button_try_free_promo(self):
         free_promo = self.browser.find_element(*DownloadBlockLocators.BUTTONTRYFREEPROMOGROWTH)

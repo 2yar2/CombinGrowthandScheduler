@@ -1,4 +1,4 @@
-from pages.open_link_growth_page import OpenLinkWithGrowthPage
+from pages.product.open_link_growth_page import OpenLinkWithGrowthPage
 
 class TestOpenPageLinkWithGrowth():
 

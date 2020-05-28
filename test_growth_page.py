@@ -1,5 +1,5 @@
-from pages.product_growth_page import ProductPage
-from pages.product_growth_page import ProductPromo
+from pages.product.product_growth_page import ProductPage
+from pages.product.product_growth_page import ProductPromo
 
 
 class TestUserWhatIsIncluded():
