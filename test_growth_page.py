@@ -5,7 +5,7 @@ from pages.product.product_growth_page import ProductPromo
 class TestUserWhatIsIncluded():
 
     def test_open_growth_page(self, browser):
-        
+
         product_page = ProductPage(browser, 'https://www.combin.com/product/instagram-growth/')
         product_page.open()
         product_page.cookies_close()
@@ -42,6 +42,7 @@ class TestUserWhatIsIncluded():
         product_page.link_read_all_publication()
         product_page.link_learn_more()
         product_page.link_news_learn_more()
+
 
     def test_growth_download_block_wrapper(self, browser):
 

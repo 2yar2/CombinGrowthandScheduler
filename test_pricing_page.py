@@ -58,6 +58,7 @@ class TestPricingPage():
         product_page.update_billing_answer()
         product_page.update_billing_link()
 
+
     def test_contact_us(self, browser):
         product_page = ContactUs(browser, 'https://www.combin.com/pricing/')
         product_page.open()
@@ -74,6 +75,7 @@ class TestPricingPage():
         product_page.marketing_team_email()
         product_page.dev_team()
         product_page.dev_team_email()
+
 
     def test_scheduler(self, browser):
         product_page = PricingScheduler(browser, 'https://www.combin.com/pricing/')

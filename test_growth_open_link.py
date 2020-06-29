@@ -1,4 +1,4 @@
-from pages.product.open_link_growth_page import OpenLinkWithGrowthPage
+from pages.product.product_open_link_growth_page import OpenLinkWithGrowthPage
 
 class TestOpenPageLinkWithGrowth():
 
@@ -8,6 +8,7 @@ class TestOpenPageLinkWithGrowth():
         product_page.open()
         product_page.cookies_close()
         product_page.watch_a_demo_video()
+
 
     def test_open_link_learn_more(self, browser):
 

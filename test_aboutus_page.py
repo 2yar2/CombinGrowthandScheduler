@@ -6,6 +6,7 @@ class TestAboutUsPage():
     def test_about_us(self, browser):
         product_page = ProductPageAboutUs(browser, 'https://www.combin.com/about/')
         product_page.open()
+        product_page.cookies_close()
 
         product_page.about_us_headline()
         product_page.about_us_text()

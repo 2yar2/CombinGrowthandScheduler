@@ -8,6 +8,9 @@ class ProductCombinMainPage(BasePage):
         close = self.browser.find_element(*MainPageCombinLocators.COOKIES_CLOSE)
         close.click()
 
+    def webinar(self):
+        self.browser.find_element(*MainPageCombinLocators.WEBINAR)
+
 # FIRST CARDS
     def product_headline(self):
         self.browser.find_element(*MainPageCombinLocators.PRODUCTHEADLINE)

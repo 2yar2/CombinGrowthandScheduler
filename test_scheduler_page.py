@@ -27,6 +27,7 @@ class TestSchedulerPage():
         product_page.heading_manage_grow_audience()
         product_page.link_manage_grow_audience()
 
+
     def test_scheduler_download_block_wrapper(self, browser):
         product_page = ProductPromoScheduler(browser, 'https://www.combin.com/product/free-instagram-scheduler/')
         product_page.open()

@@ -8,6 +8,7 @@ class TestCombinMainPage():
         product_page = ProductCombinMainPage(browser, 'https://www.combin.com/')
         product_page.open()
         product_page.cookies_close()
+        product_page.webinar()
         # FIRST CARDS
         product_page.product_headline()
         product_page.card_growth()
@@ -68,6 +69,7 @@ class TestCombinMainPage():
         product_page.blog_combin_right_card_text()
 
     # Открытие ссылок ПЕРВЫХ КАРТОЧЕК на ГЛАВНОЙ странице КОМБИН
+
     def test_click_growth_card(self, browser):
 
         product_page = ProductCombinMainPageLink(browser, 'https://www.combin.com/')

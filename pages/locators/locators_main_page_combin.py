@@ -4,6 +4,7 @@ class MainPageCombinLocators:
 
     COOKIES_CLOSE = (By.CLASS_NAME, "icon__ic-cross")
     PRODUCTHEADLINE = (By.ID, "product-cards-headline")
+    WEBINAR = (By.XPATH, '/html/body/div[1]/section[1]/div/div[1]/a/p')
 
 # FIRST CARDS
     CARDGROWTH = (By.CSS_SELECTOR, ".product-card.product-card--growth.product-cards__card")
