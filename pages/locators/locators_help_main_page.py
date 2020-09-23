@@ -4,15 +4,15 @@ class LocatorsHelpMain:
 
     COOKIES_CLOSE = (By.CLASS_NAME, "icon__ic-cross")
 
-    ANNOUNCEMENT = (By.XPATH, '/html/body/div[1]/section[1]/div[1]/a')
+
 
     HELPMAINHEADING = (By.CSS_SELECTOR, '.h1.help-main__heading.help-main__heading--top')
     HELPMAINTEXT = (By.CSS_SELECTOR, '.help-main__text.h2')
 
-    NAVIGATIONGUIDES = (By.XPATH, '/html/body/div[1]/section[1]/div[3]/a[1]') #href="https://www.combin.com/help/#gettingstarted"
-    NAVIGATIONHOWTO = (By.XPATH, '/html/body/div[1]/section[1]/div[3]/a[2]') #https://www.combin.com/help/#howto
-    NAVIGATIONFAQ = (By.XPATH, '/html/body/div[1]/section[1]/div[3]/a[3]')#https://www.combin.com/help/#faq
-    NAVIGATIONTROUBLESHOOTING = (By.XPATH, '/html/body/div[1]/section[1]/div[3]/a[4]')#https://www.combin.com/help/#troubleshooting
+    NAVIGATIONGUIDES = (By.XPATH, '/html/body/div[1]/section[1]/div[2]/a[1]') #href="https://www.combin.com/help/#gettingstarted"
+    NAVIGATIONHOWTO = (By.XPATH, '/html/body/div[1]/section[1]/div[2]/a[2]') #https://www.combin.com/help/#howto
+    NAVIGATIONFAQ = (By.XPATH, '/html/body/div[1]/section[1]/div[2]/a[3]')#https://www.combin.com/help/#faq
+    NAVIGATIONTROUBLESHOOTING = (By.XPATH, '/html/body/div[1]/section[1]/div[2]/a[4]')#https://www.combin.com/help/#troubleshooting
 # Section Essential
     ESSENTIAL = (By.XPATH, '/html/body/div[1]/section[2]/div/div/h2')
 
@@ -139,9 +139,9 @@ class LocatorsHelpMain:
     HOWTOSORTANDFILTERSEARCHTEXT = (By.XPATH, '/html/body/div[1]/section[7]/div/ul[4]/li[3]/a/p')
     HOWTOSORTANDFILTERSEARCHSYMBOL = (By.XPATH, '/html/body/div[1]/section[7]/div/ul[4]/li[3]/a/span')
 
-    HOWTOUSEADVANCEDFILTERS = (By.XPATH, '/html/body/div[1]/section[7]/div/ul[4]/li[4]/a')#https://www.combin.com/howto/how-to-use-advanced-filter-and-machine-learning-analysis/
-    HOWTOUSEADVANCEDFILTERSTEXT = (By.XPATH, '/html/body/div[1]/section[7]/div/ul[4]/li[4]/a/p')
-    HOWTOUSEADVANCEDFILTERSSYMBOL = (By.XPATH, '/html/body/div[1]/section[7]/div/ul[4]/li[4]/a/span')
+    HOWTOUSEADVANCEDFILTERS = (By.XPATH, '/html/body/div[1]/section[3]/div/ul/li[3]/a')
+    HOWTOUSEADVANCEDFILTERSTEXT = (By.XPATH, '/html/body/div[1]/section[3]/div/ul/li[3]/a/p')
+    HOWTOUSEADVANCEDFILTERSSYMBOL = (By.XPATH, '/html/body/div[1]/section[3]/div/ul/li[3]/a/span')
 
     HOWTOSCHEDULERINSTAGRAMPOSTS = (By.XPATH, '/html/body/div[1]/section[7]/div/ul[5]/li[1]/a')#https://www.combin.com/guide/how-to-schedule-instagram-posts/
     HOWTOSCHEDULERINSTAGRAMPOSTSTEXT = (By.XPATH, '/html/body/div[1]/section[7]/div/ul[5]/li[1]/a/p')

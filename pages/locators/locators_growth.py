@@ -35,6 +35,12 @@ class MainPageLocators:
     LINKLEARNMORE = (By.CSS_SELECTOR, ".link-with-arrow.link-with-arrow--primary-color.info__features-link")
     LINKNEWSLEARNMORE = By.CSS_SELECTOR, ".news__text-element.link-with-arrow.link-with-arrow--primary-color"
 
+    VIDEOHEVC = (By.XPATH, '//source[@src="https://static.combin.com/base/video/growth-promo.hevc.cd589b9ccc10.mp4"]')
+    VIDEOAV01 = (By.XPATH, '//source[@src="https://static.combin.com/base/video/growth-promo.av1.de7a1ed57e4e.mp4"]')
+    VIDEOAVC1 = (By.XPATH, '//source[@src="https://static.combin.com/base/video/growth-promo.h264.bf263d3a2754.mp4"]')
+    PLAYVIDEO = (By.ID, "btnPlayPause")
+
+
 class DownloadBlockLocators:
 #Локаторы на блоке загрузки growth
     EMAILFORSTART = (By.CLASS_NAME, "download-block__input ")

@@ -123,6 +123,19 @@ class ProductPage(BasePage):
     def link_news_learn_more(self):
         self.browser.find_element(*MainPageLocators.LINKNEWSLEARNMORE)
 
+    def video_hevc(self):
+        self.browser.find_element(*MainPageLocators.VIDEOHEVC)
+
+    def video_av01(self):
+        self.browser.find_element(*MainPageLocators.VIDEOAV01)
+
+    def video_avc1(self):
+        self.browser.find_element(*MainPageLocators.VIDEOAVC1)
+
+    def play_video(self):
+        self.browser.find_element(*MainPageLocators.PLAYVIDEO).click()
+        time.sleep(3)
+
 class ProductPromo(BasePage):
 
     def cookies_close(self):
@@ -163,5 +176,3 @@ class ProductPromo(BasePage):
     def close_promo_block(self):
         close_promo = self.browser.find_element(*DownloadBlockLocators.CLOSEPROMOBLOCK)
         close_promo.click()
-
-

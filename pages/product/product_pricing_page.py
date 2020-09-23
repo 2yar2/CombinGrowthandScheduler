@@ -222,14 +222,28 @@ class PricingScheduler(BasePage):
         slider = self.browser.find_element(*PricingLocators.SLIDERSCHEDULER)
         slider.click()
 
-    def starter_scheduler(self):
-        self.browser.find_element(*PricingLocators.STARTERSCHEDULER)
+    def unlimited_scheduler(self):
+        self.browser.find_element(*PricingLocators.UNLIMITED)
 
-    def personal_scheduler(self):
-        self.browser.find_element(*PricingLocators.PERSONALSCHEDULER)
+    def subscription_card_button(self):
+        card = self.browser.find_element(*PricingLocators.SUBSCRIPTIONCARDBUTTON).text
+        assert card == "Get started"
 
-    def business_scheduler(self):
-        self.browser.find_element(*PricingLocators.BUSINESSSCHEDULER)
+    def free_price(self):
+        text = self.browser.find_element(*PricingLocators.FREEPRICE).text
+        assert text == "Free"
+
+    def instagram_accounts(self):
+        text = self.browser.find_element(*PricingLocators.INSTAGRAMACCOUNTS).text
+        assert text == "15 Instagram accounts management"
+
+    def link_in_bio(self):
+        text = self.browser.find_element(*PricingLocators.LINKINBIO).text
+        assert text == "Link in bio adding"
+
+    def user_tagging(self):
+        text = self.browser.find_element(*PricingLocators.USERTAGGING).text
+        assert text == "User tagging"
 
     def slider_growth(self):
         slider = self.browser.find_element(*PricingLocators.SLIDERGROWTH)

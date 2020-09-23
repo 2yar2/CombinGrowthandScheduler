@@ -9,9 +9,6 @@ class ProductHelpMainPage(BasePage):
         close = self.browser.find_element(*LocatorsHelpMain.COOKIES_CLOSE)
         close.click()
 
-    def announcement(self):
-        self.browser.find_element(*LocatorsHelpMain.ANNOUNCEMENT)
-
     def help_main_heading(self):
         self.browser.find_element(*LocatorsHelpMain.HELPMAINHEADING)
 
@@ -331,8 +328,7 @@ class ProductHelpMainPage(BasePage):
         self.browser.find_element(*LocatorsHelpMain.HOWTOSETUPINSTAGRAMHASHTAGSSYMBOL)
 
     def howto_sort_and_filter_search(self):
-        href = self.browser.find_element(*LocatorsHelpMain.HOWTOSORTANDFILTERSEARCH).get_attribute("href")
-        assert href == 'https://www.combin.com/howto/how-to-sort-and-filter-search-results-in-combin/'
+        self.browser.find_element(*LocatorsHelpMain.HOWTOSORTANDFILTERSEARCH)
 
     def howto_sort_and_filter_search_text(self):
         self.browser.find_element(*LocatorsHelpMain.HOWTOSORTANDFILTERSEARCHTEXT)
@@ -342,7 +338,7 @@ class ProductHelpMainPage(BasePage):
 
     def howto_use_advanced_filters(self):
         href = self.browser.find_element(*LocatorsHelpMain.HOWTOUSEADVANCEDFILTERS).get_attribute("href")
-        assert href == 'https://www.combin.com/howto/how-to-use-advanced-filter-and-machine-learning-analysis/'
+        assert href == 'https://www.combin.com/guide/how-to-use-advanced-filters-and-machine-learning-analysis/'
 
     def howto_use_advanced_filters_text(self):
         self.browser.find_element(*LocatorsHelpMain.HOWTOUSEADVANCEDFILTERSTEXT)

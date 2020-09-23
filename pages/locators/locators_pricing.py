@@ -81,9 +81,12 @@ class PricingLocators():
 
     DEVELOPMENTTEAM = (By.XPATH, '//*[@id="initial-state"]/section/div/div/div[1]/section/div[2]/div[3]/h3')
     DEVELOPMENTTEAMEMAIL = (By.XPATH, '//*[@id="initial-state"]/section/div/div/div[1]/section/div[2]/div[3]/a')
-
+# Scheduler
     SLIDERSCHEDULER = (By.XPATH, '//*[@id="initial-state"]/section/div/div/div[1]/div[1]/label/span/div[2]/p')
 
-    STARTERSCHEDULER = (By.XPATH, '//*[@id="initial-state"]/section/div/div/div[1]/div[2]/div[1]/div[1]/div[3]/ul[2]')
-    PERSONALSCHEDULER = (By.XPATH, '//*[@id="initial-state"]/section/div/div/div[1]/div[2]/div[1]/div[2]/div[3]/ul[2]')
-    BUSINESSSCHEDULER = (By.XPATH, '//*[@id="initial-state"]/section/div/div/div[1]/div[2]/div[1]/div[3]/div[3]/ul[2]')
+    UNLIMITED = (By.XPATH, '//*[@id="initial-state"]/section/div/div/div[1]/div[2]/div[1]/div[1]/div[3]/ul[2]')
+    SUBSCRIPTIONCARDBUTTON = (By.CSS_SELECTOR, ".button-v2__text.subscription-card__button-text.button-v2__text--primary-color")
+    FREEPRICE = (By.CSS_SELECTOR, ".h3.subscription-card__price.subscription-card__price--free")
+    INSTAGRAMACCOUNTS = (By.XPATH, '//*[@id="initial-state"]/section/div/div/div[1]/div[2]/div[1]/div[1]/div[3]/ul[2]/li[1]/p')
+    LINKINBIO = (By.XPATH, '//*[@id="initial-state"]/section/div/div/div[1]/div[2]/div[1]/div[1]/div[3]/ul[2]/li[4]/p')
+    USERTAGGING = (By.XPATH, '//*[@id="initial-state"]/section/div/div/div[1]/div[2]/div[1]/div[1]/div[3]/ul[2]/li[6]/p')

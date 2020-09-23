@@ -42,6 +42,11 @@ class TestUserWhatIsIncluded():
         product_page.link_read_all_publication()
         product_page.link_learn_more()
         product_page.link_news_learn_more()
+        product_page.video_hevc()
+        product_page.video_av01()
+        product_page.video_avc1()
+        product_page.play_video()
+
 
 
     def test_growth_download_block_wrapper(self, browser):

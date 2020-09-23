@@ -3,7 +3,7 @@ from pages.product.product_install_growth_page import HowItWorksGrowth
 
 
 class TestInstalledGrowthPage():
-    @pytest.mark.regression
+
     def test_installed_growth_page(self, browser):
 
         product_page = AppInstalledGrowth(browser, 'https://www.combin.com/app-installed/?source=combin')
@@ -26,7 +26,7 @@ class TestInstalledGrowthPage():
 
 # HOW WORKS
 class TestHowItWorksGrowthPage():
-    @pytest.mark.regression
+
     def test_how_it_works_growth_page(self, browser):
 
         product_page = HowItWorksGrowth(browser, 'https://www.combin.com/app-installed/?source=combin')

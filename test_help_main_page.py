@@ -6,7 +6,6 @@ class TestHelpMainPage():
         product_page = ProductHelpMainPage(browser, 'https://www.combin.com/help/')
         product_page.open()
         product_page.cookies_close()
-        product_page.announcement()
         product_page.help_main_heading()
         product_page.help_main_text()
         product_page.navigation_faq()
