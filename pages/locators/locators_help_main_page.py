@@ -9,10 +9,10 @@ class LocatorsHelpMain:
     HELPMAINHEADING = (By.CSS_SELECTOR, '.h1.help-main__heading.help-main__heading--top')
     HELPMAINTEXT = (By.CSS_SELECTOR, '.help-main__text.h2')
 
-    NAVIGATIONGUIDES = (By.XPATH, '/html/body/div[1]/section[1]/div[2]/a[1]') #href="https://www.combin.com/help/#gettingstarted"
-    NAVIGATIONHOWTO = (By.XPATH, '/html/body/div[1]/section[1]/div[2]/a[2]') #https://www.combin.com/help/#howto
-    NAVIGATIONFAQ = (By.XPATH, '/html/body/div[1]/section[1]/div[2]/a[3]')#https://www.combin.com/help/#faq
-    NAVIGATIONTROUBLESHOOTING = (By.XPATH, '/html/body/div[1]/section[1]/div[2]/a[4]')#https://www.combin.com/help/#troubleshooting
+    NAVIGATIONGUIDES = (By.CSS_SELECTOR, ".navigation-blocks__icon.help-navigation__icon.help-navigation__icon--getstarted") #href="https://www.combin.com/help/#gettingstarted"
+    NAVIGATIONHOWTO = (By.CSS_SELECTOR, ".navigation-blocks__icon.help-navigation__icon.help-navigation__icon--howto") #https://www.combin.com/help/#howto
+    NAVIGATIONFAQ = (By.CSS_SELECTOR, ".navigation-blocks__icon.help-navigation__icon.help-navigation__icon--faq")#https://www.combin.com/help/#faq
+    NAVIGATIONTROUBLESHOOTING = (By.CSS_SELECTOR, ".navigation-blocks__icon.help-navigation__icon.help-navigation__icon--troubleshooting")#https://www.combin.com/help/#troubleshooting
 # Section Essential
     ESSENTIAL = (By.XPATH, '/html/body/div[1]/section[2]/div/div/h2')
 

@@ -39,12 +39,3 @@ class LocatorsPressPage:
     RECENTPRESS = (By.CSS_SELECTOR, ".help-section__heading.press-release__headline.h1")
 
     VIEVMORE = (By.CSS_SELECTOR, ".h2.h2--primary-color.press-release__more-button")
-
-    JYOTICHAUHAN = (By.XPATH, '/html/body/div[1]/section[3]/div/a[1]') #href="https://www.updateland.com/save-instagram-photos-pc/"
-    HASSEBAHMAD = (By.XPATH, '/html/body/div[1]/section[3]/div/a[2]') #href="https://twitgoo.com/grow-instagram-account-organically/"
-    EDUARDOMORALES = (By.XPATH, '/html/body/div[1]/section[3]/div/a[3]') #href="https://hackernoon.com/the-best-instagram-bot-that-will-keep-your-account-safe-4aaf0ccaee4d"
-    SNIGDHA = (By.XPATH, '/html/body/div[1]/section[3]/div/a[4]') #href="https://www.techpout.com/combin-scheduler-review/"
-    CANBERKARINCI = (By.XPATH, '/html/body/div[1]/section[3]/div/a[5]') #href="https://digitalagencynetwork.com/how-to-schedule-instagram-posts-and-stories/"
-    PARAMPREETCHANANA = (By.XPATH, '/html/body/div[1]/section[3]/div/a[6]') #href="https://www.reviewsxp.com/blog/combin-review/"
-    JOHNPAULAGUIAR = (By.XPATH, '/html/body/div[1]/section[3]/div/a[7]') #href="https://www.johnpaulaguiar.com/combin-review-instagram-marketing-tool/"
-    SHANEBARKER = (By.XPATH, '/html/body/div[1]/section[3]/div/a[8]') #href="https://shanebarker.com/blog/instagram-marketing-tools/"

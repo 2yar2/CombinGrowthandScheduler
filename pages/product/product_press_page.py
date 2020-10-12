@@ -89,35 +89,4 @@ class ProductPress(BasePage):
 
     def viev_more(self):
         self.browser.find_element(*LocatorsPressPage.VIEVMORE).click()
-
-    def jyoti_chauhan(self):
-        href = self.browser.find_element(*LocatorsPressPage.JYOTICHAUHAN).get_attribute("href")
-        assert href == 'https://www.updateland.com/save-instagram-photos-pc/'
-
-    def hasseb_ahmad(self):
-        href = self.browser.find_element(*LocatorsPressPage.HASSEBAHMAD).get_attribute("href")
-        assert href == 'https://twitgoo.com/grow-instagram-account-organically/'
-
-    def eduardo_morales(self):
-        href = self.browser.find_element(*LocatorsPressPage.EDUARDOMORALES).get_attribute("href")
-        assert href == 'https://hackernoon.com/the-best-instagram-bot-that-will-keep-your-account-safe-4aaf0ccaee4d'
-
-    def snighda(self):
-        href = self.browser.find_element(*LocatorsPressPage.SNIGDHA).get_attribute("href")
-        assert href == 'https://www.techpout.com/combin-scheduler-review/'
-
-    def canberk_arinci(self):
-        href = self.browser.find_element(*LocatorsPressPage.CANBERKARINCI).get_attribute("href")
-        assert href == 'https://digitalagencynetwork.com/how-to-schedule-instagram-posts-and-stories/'
-
-    def parampreet_chanana(self):
-        href = self.browser.find_element(*LocatorsPressPage.PARAMPREETCHANANA).get_attribute("href")
-        assert href == 'https://www.reviewsxp.com/blog/combin-review/'
-
-    def john_paul_aguair(self):
-        href = self.browser.find_element(*LocatorsPressPage.JOHNPAULAGUIAR).get_attribute("href")
-        assert href == 'https://www.johnpaulaguiar.com/combin-review-instagram-marketing-tool/'
-
-    def shanebarker(self):
-        href = self.browser.find_element(*LocatorsPressPage.SHANEBARKER).get_attribute("href")
-        assert href == 'https://shanebarker.com/blog/instagram-marketing-tools/'
+        time.sleep(2)

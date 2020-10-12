@@ -1,6 +1,6 @@
 from pages.base_page import BasePage
 from pages.locators.locators_404 import Locators404
-import time
+
 
 
 class Product404Page(BasePage):

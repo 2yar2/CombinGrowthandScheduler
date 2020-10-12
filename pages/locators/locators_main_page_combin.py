@@ -7,11 +7,11 @@ class MainPageCombinLocators:
 
 # FIRST CARDS
     CARDGROWTH = (By.CSS_SELECTOR, ".product-card.product-card--growth.product-cards__card")
-    CARDGROWTHCONTENT = (By.XPATH, '/html/body/div[1]/section[1]/div/div[1]/a[1]/div[1]/p')
+    CARDGROWTHCONTENT = (By.XPATH, '/html/body/div[1]/section[1]/div/div[2]/a[1]/div[1]/p')
     CARDGROWTHLOGO = (By.CSS_SELECTOR, ".product-card__logo.product-card__logo--growth.background-image.product-logo.product-logo--growth-white")
 
     CARDSCHEDULER = (By.CSS_SELECTOR, ".product-card.product-card--scheduler.product-cards__card")
-    CARDSCHEDULERCONTENT = (By.XPATH, '/html/body/div[1]/section[1]/div/div[1]/a[2]/div[1]/p')
+    CARDSCHEDULERCONTENT = (By.XPATH, '/html/body/div[1]/section[1]/div/div[2]/a[2]/div[1]/p')
     CARDSCHEDULERLOGO = (By.CSS_SELECTOR, ".product-card__logo.product-card__logo--scheduler.background-image.product-logo.product-logo--scheduler-white")
 
     AVIALABLE = (By.CSS_SELECTOR, ".avaliable.avaliable--row")
@@ -83,8 +83,8 @@ class MainPageCombinLocators:
 
 # Открытие ссылок ПЕРВЫХ КАРТОЧЕК на ГЛАВНОЙ странице КОМБИН
     # FIRST CARD GROWTH
-    CARDGROWTHBUTTONLEARNMORE = (By.XPATH, '/html/body/div[1]/section[1]/div/div[1]/a[1]/div[2]/div/p') #CLICK
-    CARDGROWTHBUTTONTRYFORFREE = (By.XPATH, '/html/body/div[1]/section[1]/div/div[1]/a[1]/div[2]/button/p')
+    CARDGROWTHBUTTONLEARNMORE = (By.XPATH, '/html/body/div[1]/section[1]/div/div[2]/a[1]/div[2]/div/p') #CLICK
+    CARDGROWTHBUTTONTRYFORFREE = (By.XPATH, '/html/body/div[1]/section[1]/div/div[2]/a[1]/div[2]/button/p')
 
     DOWNLOADBLOCKGROWTHLOGO = (By.XPATH, '//*[@id="reminder-modal-growth"]/div/div[1]')
     DOWNLOADBLOCKGROWTHTEXT = (By.XPATH, '//*[@id="reminder-modal-growth"]/div/h3[1]')
@@ -92,8 +92,8 @@ class MainPageCombinLocators:
     DOWNLOADBLOCKGROWTHTRYFORFREE = (By.XPATH, '//*[@id="reminder-modal-growth"]/div/div[2]/form/div/button') #ALLERT
     DOWNLOADBLOCKGROWTHCLOSE = (By.XPATH, '//*[@id="reminder-modal-growth"]/a')
     # FIRST CARD SCHEDULER
-    CARDSCHEDULERBUTTONLEARNMORE = (By.XPATH, '/html/body/div[1]/section[1]/div/div[1]/a[2]/div[2]/div/p') #CLICK
-    CARDSCHEDULERBUTTONTRYFORFREE = (By.XPATH, '/html/body/div[1]/section[1]/div/div[1]/a[2]/div[2]/button/p')
+    CARDSCHEDULERBUTTONLEARNMORE = (By.XPATH, '/html/body/div[1]/section[1]/div/div[2]/a[2]/div[2]/div/p') #CLICK
+    CARDSCHEDULERBUTTONTRYFORFREE = (By.XPATH, '/html/body/div[1]/section[1]/div/div[2]/a[2]/div[2]/button/p')
 
     DOWNLOADBLOCKSCHEDULERLOGO = (By.XPATH, '//*[@id="reminder-modal-scheduler"]/div/div[1]')
     DOWNLOADBLOCKSCHEDULERTEXT = (By.XPATH, '//*[@id="reminder-modal-scheduler"]/div/h3[1]')

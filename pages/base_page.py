@@ -26,3 +26,4 @@ class BasePage:
     def solve_quiz_and_get_code(self):
         alert = self.browser.switch_to.alert
         alert.accept()
+
